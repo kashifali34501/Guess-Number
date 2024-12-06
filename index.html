@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the document type and declares the language as English -->
+    <meta charset="UTF-8">
+    <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper scaling and responsiveness on different devices -->
+    <title>MasterMind by Your Name</title>
+    <!-- Specifies the title of the webpage, shown in the browser tab -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Links the external CSS file for styling the page -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>MasterMind by Nilansh Sharma</h1>
+        <!-- Displays the main heading of the game -->
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Game Results Section -->
+        <article id="results">
+            <h2>Game Results</h2>
+            <!-- Displays the results heading -->
+            <div id="result-container">
+                <!-- Container to hold all result rows -->
+                <div class="result-header">
+                    <!-- Header row for results with column names -->
+                    <span>Guess</span>
+                    <!-- Column for user's guesses -->
+                    <span>Correctly Placed</span>
+                    <!-- Column for digits correctly placed -->
+                    <span>Incorrectly Placed</span>
+                    <!-- Column for digits incorrectly placed -->
+                </div>
+                <div id="result-rows"></div>
+                <!-- Placeholder for dynamically added rows showing guesses and results -->
+            </div>
+        </article>
+
+        <!-- Input Section for Guessing -->
+        <article id="input-section">
+            <h2>Make Your Guess</h2>
+            <!-- Section heading for the input form -->
+            <input id="guess-input" type="text" maxlength="4" placeholder="Enter 4 digits" />
+            <!-- Textbox for entering a 4-digit guess; maximum length set to 4 -->
+            <button id="submit-button" disabled>Submit</button>
+            <!-- Submit button for submitting the guess; initially disabled -->
+        </article>
+    </main>
+
+    <!-- JavaScript Files -->
+    <script src="helper.js"></script>
+    <!-- Links the helper JavaScript file containing utility functions -->
+    <script src="main.js"></script>
+    <!-- Links the main JavaScript file for game logic -->
+</body>
+</html>
